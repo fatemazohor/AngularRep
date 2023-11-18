@@ -1,0 +1,80 @@
+
+<style>
+  .navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+
+
+}
+.navbar-brand:hover{
+    color: #000;
+}
+.nav-link{
+    color: #000;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.nav-link:hover{
+    color: #000;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border-color: #002684;
+    margin-right: -35px;
+    border-radius: 60px;
+    font-family: 'Rubik', sans-serif;
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background-color: #002684;
+    color: #fff;
+    font-weight: 700;
+
+}
+</style>
+
+<!-- navbar start here -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Blue Apron</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa-sharp fa-solid fa-bowl-rice"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link "  href="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu">On The Menu</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="newsletter">NewsLetter</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- navbar End here -->
+
+<router-outlet></router-outlet>
