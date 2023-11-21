@@ -1,9 +1,61 @@
 {
   "posts": [
+    {},
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": 2,
+      "firstName": "Tanis",
+      "lastName": "Haque",
+      "email": "tani@gmail.com",
+      "cell": "015465",
+      "salary": "85000"
+    },
+    {
+      "id": 3,
+      "firstName": "Bnabi",
+      "lastName": "Ara",
+      "email": "banbi@yahoo.com",
+      "cell": "215465",
+      "salary": "942000"
+    },
+    {
+      "id": 4,
+      "firstName": "Ishak",
+      "lastName": "tania",
+      "email": "istahnia@gmil.com",
+      "cell": "1454654",
+      "salary": "841200"
+    },
+    {
+      "id": 5,
+      "firstName": "Javed",
+      "lastName": "Karm",
+      "email": "javed@yahool.com",
+      "cell": "24546",
+      "salary": "98000"
+    },
+    {
+      "id": 6,
+      "firstName": "Gani",
+      "lastName": "Haque",
+      "email": "gani@gmail.com",
+      "cell": "5454",
+      "salary": "86000"
+    },
+    {
+      "id": 7,
+      "firstName": "Sumia",
+      "lastName": "Ali",
+      "email": "sumis@gmai.com",
+      "cell": "014245",
+      "salary": "78000"
+    },
+    {
+      "id": 8,
+      "firstName": "Al",
+      "lastName": "alo",
+      "email": "aamin@yahoo.com",
+      "cell": "0455",
+      "salary": "23600"
     }
   ],
   "comments": [
