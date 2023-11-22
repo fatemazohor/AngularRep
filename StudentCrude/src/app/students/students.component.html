@@ -8,6 +8,32 @@
     </div>
 </nav>
 
+<div class="container">
+    <table class="table table-striped text-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Roll</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of studentData">
+                <td>{{row.id}}</td>
+                <td>{{row.name}}</td>
+                <td>{{row.subject}}</td>
+                <td>{{row.roll}}</td>
+                <td>
+                    <button class="btn btn-warning mx-1" (click)="editbyId(row)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</button>
+                    <button class="btn btn-danger mx-1" (click)="deleteStu(row)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -21,18 +47,18 @@
                 <form [formGroup]="formValue">
                     <div class="mb-3">
                         <label  class="form-label">First Name</label>
-                        <input type="text" class="form-control" formControlName="firstName" >                        
+                        <input type="text" class="form-control" formControlName="name" >                        
                     </div>
                     
                     <div class="mb-3">
                         <label  class="form-label">Subject</label>
-                        <input type="text" class="form-control" formControlName="lastName">                        
+                        <input type="text" class="form-control" formControlName="subject">                        
                     </div>
                     
                    
                     <div class="mb-3">
                         <label  class="form-label">Roll</label>
-                        <input type="text" class="form-control" formControlName="cell" >                        
+                        <input type="text" class="form-control" formControlName="roll" >                        
                     </div>
                     
                     
@@ -42,7 +68,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" (click)=" addStudent()">Save</button>
-                <button type="button" class="btn btn-primary" >Update</button>
+                <button type="button" class="btn btn-primary" (click)="editStu()">Update</button>
             </div>
         </div>
     </div>

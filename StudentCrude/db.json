@@ -2,8 +2,21 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Alim",
+      "subject": "JEE",
+      "roll": "023"
+    },
+    {
+      "id": 2,
+      "name": "Jamie",
+      "subject": "NT",
+      "roll": "036"
+    },
+    {
+      "id": 3,
+      "name": "Urmi",
+      "subject": "DDD",
+      "roll": "0458"
     }
   ],
   "comments": [
