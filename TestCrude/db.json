@@ -1,6 +1,13 @@
 {
   "posts": [
-    {},
+    {
+      "id": 1,
+      "firstName": "Unabi",
+      "lastName": "Ara",
+      "email": "uanbi@yahoo.com",
+      "cell": "015465",
+      "salary": "42000"
+    },
     {
       "id": 2,
       "firstName": "Tanis",
@@ -43,19 +50,11 @@
     },
     {
       "id": 7,
-      "firstName": "Sumia",
-      "lastName": "Ali",
-      "email": "sumis@gmai.com",
-      "cell": "014245",
-      "salary": "78000"
-    },
-    {
-      "id": 8,
-      "firstName": "Al",
-      "lastName": "alo",
-      "email": "aamin@yahoo.com",
-      "cell": "0455",
-      "salary": "23600"
+      "firstName": "Sumiad",
+      "lastName": "Ali drc",
+      "email": "dsumis@gmai.com",
+      "cell": "0142455",
+      "salary": "780003"
     }
   ],
   "comments": [

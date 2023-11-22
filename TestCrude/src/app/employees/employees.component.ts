@@ -88,13 +88,13 @@ export class EmployeesComponent implements OnInit {
     this.api.editEmployee(this.employeeModel.id, this.employeeModel)
     .subscribe(res => {
       console.log(res);
-      alert("Employee Updated")
+      alert("Employee Updated.")
       this.formValue.reset();
       this.getAll();
       
     },
       err => {
-        alert("Data Not Update")
+        alert("Data Not Updated.")
       }
 
     )
