@@ -85,7 +85,7 @@ export class StudentsComponent implements OnInit{
     .subscribe({next:res =>{
       console.log(res)
       alert("Data edited")
-      this.formValue.reset()
+      this.formValue.reset();
       this.getAllstudetn()
     },
     error: err => {alert("Data not edited.")} 

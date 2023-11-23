@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "department": "dfdsfa",
+      "gender": "",
+      "hobby": "dfsaf"
+    },
+    {
+      "id": 2,
+      "department": "english",
+      "gender": "",
+      "hobby": "fojsofas"
+    },
+    {
+      "id": 3,
+      "department": "bangla",
+      "gender": "",
+      "hobby": "dfsaf"
+    },
+    {
+      "id": 4,
+      "name": "Yunuse Ali Armani",
+      "department": "sfsa",
+      "gender": "male",
+      "hobby": "dfas"
+    },
+    {
+      "id": 5,
+      "name": "Javed Karim",
+      "department": "sfsd",
+      "gender": "female",
+      "hobby": "dfsdf"
+    },
+    {
+      "id": 6,
+      "name": "Pnabi Ara",
+      "department": "hjghj",
+      "gender": "male",
+      "hobby": "jhgj"
+    },
+    {
+      "id": 7,
+      "name": "Pnabi Ara",
+      "department": "gfg",
+      "gender": "female",
+      "hobby": "fgdf"
+    },
+    {
+      "id": 8,
+      "name": "gfdfg",
+      "department": "Bangla",
+      "gender": "female",
+      "hobby": "gfdg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

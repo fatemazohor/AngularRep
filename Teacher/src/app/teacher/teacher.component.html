@@ -1,0 +1,96 @@
+<nav class="navbar navbar-light bg-primary p-2">
+    <h4 class="text-light"> Teacher CRUD</h4>
+    <div class="d-flex">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Teacher</button>
+    </div>
+</nav>
+<div class="container">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Gender</th>
+            <th>Hobby</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tech of teacherData">
+            <td>{{tech.id}}</td>
+            <td>{{tech.name}}</td>
+            <td>{{tech.department}}</td>
+            <td>{{tech.gender}}</td>
+            <td>{{tech.hobby}}</td>
+            <td>
+                <button class="btn btn-warning mx-1" (click)="onEdit(tech)" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                <button class="btn btn-danger mx-1" (click)="deleteTecher(tech)">Delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+
+</table>
+
+<!-- <p>{{tecgender}}</p> -->
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body">
+                    <form [formGroup]="formValue">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" formControlName="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Department</label>
+                            <select class="form-select form-select-lg mb-3" aria-label="Large select example" formControlName="department">
+                                <option selected>Open this select menu</option>
+                                <option value="English">English</option>
+                                <option value="Bangla">Bangla</option>
+                                <option value="Physics">Physics</option>
+                              </select>
+                            <!-- <input type="text" class="form-control" formControlName="department"> -->
+                        </div>
+
+
+                        <div class="form-check" formControlName="gender">
+                            <input class="form-check-input" [(ngModel)]="tecgender" type="radio" name="gender"  value="male" formControlName="gender">
+                            <label class="form-check-label" for="male">
+                              Male
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" [(ngModel)]="tecgender" type="radio" name="gender" value="female" formControlName="gender">
+                            <label class="form-check-label" for="female">
+                              Female
+                            </label>
+                          </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Hobby</label>
+                            <input type="text" class="form-control" formControlName="hobby">
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" (click)="saveTec()">Save</button>
+                    <button type="button" class="btn btn-primary" (click)="edit()">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
