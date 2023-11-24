@@ -52,6 +52,20 @@
       "department": "Bangla",
       "gender": "female",
       "hobby": "gfdg"
+    },
+    {
+      "id": 9,
+      "name": "Wahid Ara",
+      "department": "Bangla",
+      "gender": "male",
+      "hobby": ""
+    },
+    {
+      "id": 10,
+      "name": "Urmi",
+      "department": "Physics",
+      "gender": "female",
+      "hobby": ""
     }
   ],
   "comments": [

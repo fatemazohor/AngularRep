@@ -16,6 +16,8 @@ export class TeacherComponent implements OnInit{
   teacherData: any;
   tecgender:any;
 
+  selectedHobby: any[] =[];
+
   constructor(private api:TeacherService, private formBuilder: FormBuilder){}
 
   ngOnInit(): void{
