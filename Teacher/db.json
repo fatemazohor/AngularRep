@@ -1,24 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "department": "dfdsfa",
-      "gender": "",
-      "hobby": "dfsaf"
-    },
-    {
-      "id": 2,
-      "department": "english",
-      "gender": "",
-      "hobby": "fojsofas"
-    },
-    {
-      "id": 3,
-      "department": "bangla",
-      "gender": "",
-      "hobby": "dfsaf"
-    },
-    {
       "id": 4,
       "name": "Yunuse Ali Armani",
       "department": "sfsa",
@@ -66,15 +48,79 @@
       "department": "Physics",
       "gender": "female",
       "hobby": ""
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 11,
+      "name": "AK Karim",
+      "department": "Bangla",
+      "gender": "male",
+      "hobby": ""
+    },
+    {
+      "id": 12,
+      "name": "Hasan yy",
+      "department": "Physics",
+      "gender": "female",
+      "hobby": ""
+    },
+    {
+      "id": 13,
+      "name": "Hasan yy",
+      "department": "Bangla",
+      "gender": "male",
+      "hobby": ""
+    },
+    {
+      "id": 14,
+      "name": "AK Karim",
+      "department": "English",
+      "gender": "male",
+      "hobby": null
+    },
+    {
+      "id": 15,
+      "name": "AK Karim",
+      "department": "Physics",
+      "gender": "female",
+      "hobby": ""
+    },
+    {
+      "id": 16,
+      "name": "Kamrul Hasan",
+      "department": "English",
+      "gender": "male",
+      "hobby": ""
+    },
+    {
+      "id": 17,
+      "name": "Kamrul Hasan",
+      "department": "Bangla",
+      "gender": "female",
+      "hobby": ""
+    },
+    {
+      "id": 18,
+      "name": "Opran Jahan",
+      "department": "English",
+      "gender": "male",
+      "hobby": true
+    },
+    {
+      "id": 19,
+      "name": "Yunuse Ali",
+      "department": "Physics",
+      "gender": "female",
+      "hobby": true
+    },
+    {
+      "id": 20,
+      "name": "AK Karim",
+      "department": "Bangla",
+      "gender": "male",
+      "hobby": true
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

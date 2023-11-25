@@ -14,9 +14,12 @@ export class TeacherComponent implements OnInit{
   formValue !: FormGroup;
 
   teacherData: any;
-  tecgender:any;
+  
 
-  selectedHobby: any[] =[];
+  selectedHobby: any[] =[
+   
+
+  ];
 
   constructor(private api:TeacherService, private formBuilder: FormBuilder){}
 
@@ -32,6 +35,8 @@ export class TeacherComponent implements OnInit{
     this.getTeech()
 
   }
+
+  
   saveTec(){
     this.teacherModel.name=this.formValue.value.name;
     this.teacherModel.department=this.formValue.value.department;

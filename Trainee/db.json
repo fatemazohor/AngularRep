@@ -1,0 +1,90 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "name": "AK Karimdfdf",
+      "gender": "male",
+      "hobby": true,
+      "subject": ""
+    },
+    {
+      "id": 5,
+      "name": "Kamrul Hasan",
+      "gender": "female",
+      "hobby": true,
+      "subject": ""
+    },
+    {
+      "id": 6,
+      "name": "Opran Jahan",
+      "gender": "female",
+      "hobby": true,
+      "subject": ""
+    },
+    {
+      "id": 7,
+      "name": "Kamrul Hasan",
+      "gender": "male",
+      "hobby": true,
+      "subject": ""
+    },
+    {
+      "id": 8,
+      "name": "Kamrul Hasan",
+      "subject": "",
+      "gender": "male",
+      "hobby": "vdfg"
+    },
+    {
+      "id": 9,
+      "name": "Yunuse Ali Armani",
+      "subject": "",
+      "gender": "male",
+      "hobby": "dfsf"
+    },
+    {
+      "id": 10,
+      "name": "Kamrul Hasan",
+      "subject": "",
+      "gender": "male",
+      "hobby": "zsz"
+    },
+    {
+      "id": 11,
+      "name": "Yunuse Ali Armani",
+      "subject": "",
+      "gender": "female",
+      "hobby": "dfdsfsa"
+    },
+    {
+      "id": 12,
+      "name": "AK Karim",
+      "gender": "male",
+      "hobby": true
+    },
+    {
+      "id": 13,
+      "name": "Opran Jahan",
+      "gender": "female",
+      "hobby": true
+    },
+    {
+      "id": 14,
+      "name": "Kamrul Hasan",
+      "subject": "Bangla",
+      "gender": "male",
+      "hobby": true
+    },
+    {
+      "id": 15,
+      "name": "Opran Jahan",
+      "subject": "Bangla",
+      "gender": "female",
+      "hobby": ""
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
