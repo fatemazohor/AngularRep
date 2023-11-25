@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TeacherModel } from './teacher.model';
 import { TeacherService } from '../serviecs/teacher.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-teacher',
@@ -17,7 +17,8 @@ export class TeacherComponent implements OnInit{
   
 
   selectedHobby: any[] =[
-   
+   {key:1, hName:"Reading"},
+   {key:2, hName:"Coading"}
 
   ];
 
@@ -28,21 +29,34 @@ export class TeacherComponent implements OnInit{
       name:[''],
       department:[''],
       gender:[''],
-      hobby:[''],
+      hobby_read: [false],
+      hobby_coad: [false],
       
 
     });
     this.getTeech()
 
   }
-
+setFormToModel(){
+  this.teacherModel.name=this.formValue.value.name;
+  this.teacherModel.department=this.formValue.value.department;
+  this.teacherModel.gender=this.formValue.value.gender;
+  let hobbies:string[]=[];
+  if(this.formValue.value.hobby_read){
+    hobbies.push('Reading');
+  }
+  if(this.formValue.value.hobby_coad){
+    hobbies.push('Coading');
+  }
+  this.teacherModel.hobby=hobbies;
+}
   
   saveTec(){
-    this.teacherModel.name=this.formValue.value.name;
-    this.teacherModel.department=this.formValue.value.department;
-    this.teacherModel.gender=this.formValue.value.gender;
-    this.teacherModel.hobby=this.formValue.value.hobby;
-    
+    // this.teacherModel.name=this.formValue.value.name;
+    // this.teacherModel.department=this.formValue.value.department;
+    // this.teacherModel.gender=this.formValue.value.gender;
+    // this.teacherModel.hobby=this.formValue.value.hobby;
+    this.setFormToModel();
     this.api.saveTecher(this.teacherModel)
     .subscribe({
       next: res => {
@@ -82,15 +96,16 @@ export class TeacherComponent implements OnInit{
       this.formValue.controls['name'].setValue(tech.name);
       this.formValue.controls['department'].setValue(tech.department);
       this.formValue.controls['gender'].setValue(tech.gender);
-      this.formValue.controls['hobby'].setValue(tech.hobby);
+      this.formValue.controls['hobby_read'].setValue(tech.hobby.includes('Reading'));
+      this.formValue.controls['hobby_coad'].setValue(tech.hobby.includes('Coading'));
 
     }
     edit(){
-      this.teacherModel.name=this.formValue.value.name;
-      this.teacherModel.department=this.formValue.value.department;
-      this.teacherModel.gender=this.formValue.value.gender;
-      this.teacherModel.hobby=this.formValue.value.hobby;
-      
+      // this.teacherModel.name=this.formValue.value.name;
+      // this.teacherModel.department=this.formValue.value.department;
+      // this.teacherModel.gender=this.formValue.value.gender;
+      // this.teacherModel.hobby=this.formValue.value.hobby;
+      this.setFormToModel();
       this.api.editTech(this.teacherModel.id, this.teacherModel)
       .subscribe({
         next: res => {

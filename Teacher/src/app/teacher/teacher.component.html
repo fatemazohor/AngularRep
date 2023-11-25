@@ -88,21 +88,22 @@
                             <label class="form-label">Hobby</label>
                             <!-- <input type="text" class="form-control" formControlName="hobby"> -->
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="Reading" id="flexCheckDefault" formControlName="hobby">
+                                <input class="form-check-input" type="checkbox" value="Reading" id="flexCheckDefault" formControlName="hobby_read">
                                 <label class="form-check-label" for="flexCheckDefault"  >
                                   Reading
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="Coding" id="flexCheckChecked" formControlName="hobby">
+                                <input class="form-check-input" type="checkbox" value="Coding" id="flexCheckChecked" formControlName="hobby_coad">
                                 <label class="form-check-label" for="flexCheckChecked"   >
                                   Coding
                                 </label>
                               </div>
-                              <!-- <div class="form-check" *ngFor="let h for selectedHobby">
-                                <input class="form-check-input"  type="checkbox" value="Coding" id="flexCheckChecked">
+                              <!-- <div class="form-check" *ngFor="let h of selectedHobby; let i=index;">
+                                <input class="form-check-input"  type="checkbox" [(ngModel)]="selectedHobby[i]"  value="selectedHobby[i].hName" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  Coding
+                                  {{selectedHobby[i]
+                                  .hName}}
                                 </label>
                               </div> -->
                         </div>
