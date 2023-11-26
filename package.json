@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angular-font-awesome": "^3.1.2",
+    "bootstrap": "^5.3.2"
+  }
+}
