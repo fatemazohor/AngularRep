@@ -4,6 +4,6 @@ export class TraineeModel{
     subject:string='';
     
     gender:string='';
-    hobby:string='';
+    hobby:string[]=[];
     
 }
