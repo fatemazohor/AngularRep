@@ -4,6 +4,7 @@ import { NgForm } from "@angular/forms";
 // import { Order } from "../model/order.model";
 
 @Component({
+    selector: "app-checkout",
     templateUrl: "checkout.component.html",
     // styleUrls: ["checkout.component.css"]
 })
