@@ -9,9 +9,11 @@ import { StaticDataSource } from './model/static.datasource';
 import { StoreModule } from './store/store.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    
     // StoreComponent
   ],
   imports: [
