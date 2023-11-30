@@ -58,9 +58,13 @@
     },
     {
       "id": 12,
-      "name": "AK Karim",
-      "gender": "male",
-      "hobby": true
+      "name": "Javed Karim",
+      "subject": "Physics",
+      "gender": "female",
+      "hobby": [
+        "Reading",
+        "Coading"
+      ]
     },
     {
       "id": 13,

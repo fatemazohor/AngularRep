@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "hobby": [
+        "Reading"
+      ],
+      "name": "Yunuse Ali Armani",
+      "department": "Bangla",
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "hobby": [
+        "Coading"
+      ],
+      "name": "Opran Jahan",
+      "department": "Physics",
+      "gender": "female"
+    },
+    {
+      "id": 4,
+      "hobby": [
+        "Reading"
+      ],
+      "name": "Opran",
+      "department": "Bangla",
+      "gender": "male"
+    },
+    {
+      "id": 5,
+      "hobby": [
+        "Coading"
+      ],
+      "name": "Kamrul Hasan",
+      "department": "English",
+      "gender": "male"
+    },
+    {
+      "id": 6,
+      "hobby": [
+        "Reading"
+      ],
+      "name": "Galib khan",
+      "department": "Bangla",
+      "gender": "male"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

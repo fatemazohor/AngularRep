@@ -11,8 +11,8 @@ import { RouterModule } from "@angular/router";
 
 @NgModule({
     imports: [ModelModule, BrowserModule, FormsModule , RouterModule],
-    declarations: [StoreComponent, CounterDirective , CartSummaryComponent ,
-        CartDetailComponent, CheckoutComponent],
+    declarations: [StoreComponent, CounterDirective , CartSummaryComponent
+         ,CartDetailComponent, CheckoutComponent],
     exports: [StoreComponent , CartDetailComponent, CheckoutComponent]
 })
 export class StoreModule { }
