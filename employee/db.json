@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "hobby": [
+        "Coading"
+      ],
+      "name": "Opran Jahan",
+      "department": "Physics",
+      "gender": "female"
+    },
+    {
+      "id": 4,
+      "hobby": [
+        "Reading"
+      ],
+      "name": "Opran",
+      "department": "Bangla",
+      "gender": "male"
+    },
+    {
+      "id": 5,
+      "hobby": [
+        "Coading"
+      ],
+      "name": "Kamrul Hasan",
+      "department": "English",
+      "gender": "male"
+    },
+    {
+      "id": 6,
+      "hobby": [
+        "Reading"
+      ],
+      "name": "Galib khan",
+      "department": "Bangla",
+      "gender": "male"
+    },
+    {
+      "id": 7,
+      "hobby": [
+        "Reading",
+        "Coading"
+      ],
+      "name": "dhfsajkldfh",
+      "department": "Bangla",
+      "gender": "male"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

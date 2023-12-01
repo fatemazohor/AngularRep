@@ -12,14 +12,7 @@ export class TraineeComponent implements OnInit{
   traineModel:TraineeModel = new TraineeModel();
   formValue !: FormGroup;
   traineData: any;
-  selectedHobby:any[]=[
-{
-  key:1,value:"Coding"
-},
-{
-  key:2,value:"Reading"
-}
-  ]
+  
 
   constructor(private traineeService:TraineeService, private formBuilder: FormBuilder){
 
@@ -31,7 +24,8 @@ export class TraineeComponent implements OnInit{
       name:[''],
       subject:[''],
       gender:[''],
-      hobby:[''],
+      hobby_reading:[false],
+      hobby_coading:[false],
       
       
      }
@@ -39,15 +33,25 @@ export class TraineeComponent implements OnInit{
 this.getAlltrainee();
 }
 
-getHobby():any[]{
 
-  return this.selectedHobby.filter(e=>{this.formValue.value.hobby})
-}
-saveTrainee(){
+
+setformToData(){
   this.traineModel.name=this.formValue.value.name;
   this.traineModel.subject=this.formValue.value.subject;
   this.traineModel.gender=this.formValue.value.gender;
-  this.traineModel.hobby=this.formValue.value.hobby;
+  let hobbies:string[]=[];
+  if(this.formValue.value.hobby_reading){
+    hobbies.push('Reading')
+  }
+  if(this.formValue.value.hobby_coading){
+    hobbies.push('Coading')
+  }
+  this.traineModel.hobby=hobbies;
+}
+
+
+saveTrainee(){
+  this.setformToData();
   this.traineeService.traninePost(this.traineModel).subscribe(
     {next:res=>{
       console.log(res)
@@ -88,14 +92,12 @@ onEdit(tr:any){
   this.formValue.controls['name'].setValue(tr.name)
   this.formValue.controls['subject'].setValue(tr.subject)
   this.formValue.controls['gender'].setValue(tr.gender)
-  this.formValue.controls['hobby'].setValue(tr.hobby)
+  this.formValue.controls['hobby_reading'].setValue(tr.hobby.includes('Reading'))
+  this.formValue.controls['hobby_coading'].setValue(tr.hobby.includes('Coading'))
 }
 
 trainEd(){
-  this.traineModel.name=this.formValue.value.name;
-  this.traineModel.subject=this.formValue.value.subject;
-  this.traineModel.gender=this.formValue.value.gender;
-  this.traineModel.hobby=this.formValue.value.hobby;
+  this.setformToData();
   this.traineeService.traineEdit(this.traineModel.id ,this.traineModel).subscribe(
     {next:res=>{
       console.log(res)
