@@ -2,10 +2,13 @@
   "posts": [
     {
       "id": 4,
-      "name": "Yunuse Ali Armani",
-      "department": "sfsa",
-      "gender": "male",
-      "hobby": "dfas"
+      "name": "Urmi",
+      "department": "Physics",
+      "gender": "female",
+      "hobby": [
+        "Reading",
+        "Coading"
+      ]
     },
     {
       "id": 5,
