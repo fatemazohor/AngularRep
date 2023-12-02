@@ -53,13 +53,6 @@
       "hobby": ""
     },
     {
-      "id": 11,
-      "name": "AK Karim",
-      "department": "Bangla",
-      "gender": "male",
-      "hobby": ""
-    },
-    {
       "id": 12,
       "name": "Hasan yy",
       "department": "Physics",
@@ -167,6 +160,16 @@
       "gender": "male",
       "hobby": [
         "Reading"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Tanis Haque",
+      "department": "Bangla",
+      "gender": "female",
+      "hobby": [
+        "Reading",
+        "Coading"
       ]
     }
   ],
