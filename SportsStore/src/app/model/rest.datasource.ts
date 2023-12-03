@@ -43,26 +43,21 @@ export class RestDataSource {
         return this.http.put<Product>(`${this.baseUrl}products/${product.id}`,
             product, this.getOptions());
     }
-
     deleteProduct(id: number): Observable<Product> {
         return this.http.delete<Product>(`${this.baseUrl}products/${id}`,
             this.getOptions());
     }
-
     getOrders(): Observable<Order[]> {
         return this.http.get<Order[]>(this.baseUrl + "orders", this.getOptions());
     }
-
     deleteOrder(id: number): Observable<Order> {
         return this.http.delete<Order>(`${this.baseUrl}orders/${id}`,
             this.getOptions());
     }
-
     updateOrder(order: Order): Observable<Order> {
         return this.http.put<Order>(`${this.baseUrl}orders/${order.id}`,
             order, this.getOptions());
     }
-
     private getOptions() {
         return {
             headers: new HttpHeaders({

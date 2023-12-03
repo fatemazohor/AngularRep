@@ -10,9 +10,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
+// const features: any[] = [MatToolbarModule,MatSidenavModule,MatIconModule,
+//     MatDividerModule, MatButtonModule, MatTableModule, MatPaginatorModule, 
+//     MatFormFieldModule, MatInputModule, MatCheckboxModule];
 const features: any[] = [MatToolbarModule,MatSidenavModule,MatIconModule,
-    MatDividerModule, MatButtonModule, MatTableModule, MatPaginatorModule, 
-    MatFormFieldModule, MatInputModule, MatCheckboxModule];
+MatDividerModule,MatButtonModule,MatTableModule,MatPaginatorModule,
+MatFormFieldModule,MatInputModule,MatTableModule,MatPaginatorModule];
 
 @NgModule({
     imports: [features],

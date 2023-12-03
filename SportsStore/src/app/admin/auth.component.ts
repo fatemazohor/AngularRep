@@ -25,9 +25,10 @@ export class AuthComponent {
                     }
                     this.errorMessage = "Authentication Failed";
                 })
-                // this.router.navigateByUrl("/admin/main");
+               
         } else {
             this.errorMessage = "Form Data Invalid";
         }
+        // this.router.navigateByUrl("/admin/main");
     }
 }

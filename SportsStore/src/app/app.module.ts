@@ -7,6 +7,8 @@ import { ProductRepository } from './model/product.repository';
 import { StaticDataSource } from './model/static.datasource';
 import { StoreModule } from './store/store.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialFeatures } from './admin/material.module';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     StoreModule,
     BrowserAnimationsModule,
+    MaterialFeatures
     ],
   providers: [
     provideClientHydration(),
     ProductRepository,
     StaticDataSource,
+    provideHttpClient(withFetch())
     
   ],
   bootstrap: [AppComponent]
