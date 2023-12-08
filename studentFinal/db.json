@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "hobby": [
+        "Reading",
+        "Coading"
+      ],
+      "name": "Ishak tania",
+      "gender": "male",
+      "subject": "Bangla"
+    },
+    {
+      "id": 3,
+      "hobby": [
+        "Coading"
+      ],
+      "name": "Gani Haque",
+      "gender": "male",
+      "subject": "Physics"
+    },
+    {
+      "id": 4,
+      "hobby": [
+        "Reading"
+      ],
+      "name": "Al Amin alo",
+      "gender": "male",
+      "subject": "Bangla"
+    },
+    {
+      "id": 5,
+      "hobby": [
+        "Coading"
+      ],
+      "name": "Gani Haque",
+      "gender": "male",
+      "subject": "Physics"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
