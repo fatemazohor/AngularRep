@@ -24,7 +24,7 @@
               <section *ngIf="(selected | date:'EE, MMM d') == (item.date|date:'EE, MMM d')" class="button-container">
                 <div class="button-row" >
                   <button [routerLink]="[
-                    '/ticket/',Movie.id,'show',item.showID]" mat-raised-button color="primary">{{item.startTime}}</button>
+                    '/ticket',Movie.id,'show',item.showID]" mat-raised-button color="primary">{{item.startTime}}</button>
                 </div>
               </section>
             </div>

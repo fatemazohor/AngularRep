@@ -65,9 +65,9 @@ export class MovieTicketComponent implements OnInit {
   ngOnInit(): void {
 
     this.totalTicketPrice=0;
-    this.rouite.params.subscribe(params => { this.ShowID = params['showID']; this.MovieID = params['id'] });
+    this.rouite.params.subscribe(params => {this.MovieID = params['movieID'] , this.ShowID = params['showID']});
     this.movieDetails(this.MovieID)
-   
+   console.log(this.MovieID +" " +this.ShowID)
    this.getShow();
    this.checkIfselectedLocalStorage()
 
@@ -90,7 +90,7 @@ export class MovieTicketComponent implements OnInit {
   getShow() {
     this.showContext.getShowByShowID(this.ShowID).subscribe((showResult) => {
       this.Show = showResult;
-      // this.getCinemaHall(showResult.cinemaHallID);
+      this.getCinemaHall(showResult.cinemaHallID);
       this.getShowSeats(showResult.showID);
 
     })
