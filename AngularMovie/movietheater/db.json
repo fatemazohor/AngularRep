@@ -18,7 +18,7 @@
       "description": "A young boy named Mahito yearning for his mother ventures into a world shared by the living and the dead. There, death comes to an end, and life finds a new beginning. A semi-autobiographical fantasy about life, death, and creation, in tribute to friendship, from the mind of Hayao Miyazaki.",
       "censorship": "PG13",
       "trailerLink": "https://youtu.be/t5khm-VjEu4?si=hMaWKodeaKCrtND8",
-      "imageLink": "https://amc-theatres-res.cloudinary.com/image/upload/c_fill,f_auto,fl_lossy,g_auto,h_600,q_auto,w_1024/v1700509340/amc-cdn/general/the-boy-and-the-heron/FLM_2580_THE_BOY_AND_THE_HERON_ARTISAN_AWARENESS_HP_DESKTOP_HERO_2000x600.jpg",
+      "imageLink": "../../../assets/movie1.webp",
       "status": "nowPlaying"
     },
     {
@@ -32,7 +32,7 @@
       "description": "Illumination and Universal Pictures present a new original film, MIGRATION, a modern-day comedy following a family of ducks who convince their over-protective father to go on the vacation of a lifetime as they attempt to migrate from New England, through New York City, and ultimately down to the Bahamas. The film is produced by Illumination founder Chris Meledandri and directed by Oscar nominee Benjamin Renner (Ernest et Celestine) with an original screenplay by Mike White (School of Rock, White Lotus).",
       "censorship": "PG",
       "trailerLink": "https://youtu.be/hWbfohXIdEU?si=9_C37Ss_BOGmFXRH",
-      "imageLink": "https://amc-theatres-res.cloudinary.com/image/upload/c_fill,f_auto,fl_lossy,g_auto,h_600,q_auto,w_1024/v1701357192/amc-cdn/general/migration/sweeps/FLM_2571_MIGRATION_SWEEPSTAKESHP_Desktop_Hero_2000x600.jpg",
+      "imageLink": "../../../assets/movie2.webp",
       "status": "nowPlaying"
     },
     {
@@ -46,7 +46,35 @@
       "description": "Napoleon is a spectacle-filled action epic that details the checkered rise and fall of the iconic French Emperor Napoleon Bonaparte, played by Oscar®-winner Joaquin Phoenix. Against a stunning backdrop of large-scale filmmaking orchestrated by legendary director Ridley Scott, the film captures Bonaparte's relentless journey to power through the prism of his addictive, volatile relationship with his one true love, Josephine, showcasing his visionary military and political tactics against some of the most dynamic practical battle sequences ever filmed.",
       "censorship": "R",
       "trailerLink": "https://youtu.be/LIsfMO5Jd_w?si=qJ60oPNcfut0uVKH",
-      "imageLink": "https://amc-theatres-res.cloudinary.com/image/upload/c_fill,f_auto,fl_lossy,g_auto,h_900,q_auto,w_1600/v1695915279/amc-cdn/production/2/movies/73200/73172/MovieStillDynamic/158878.jpg",
+      "imageLink": "../../../assets/movie3.webp",
+      "status": "nowPlaying"
+    },
+    {
+      "id": 4,
+      "title": "Napoleon",
+      "director": "Ridley Scott",
+      "duration": "2 HR 37 MIN",
+      "genera": "ACTION",
+      "releaseDate": "NOV 22, 2023",
+      "country": "USA",
+      "description": "Napoleon is a spectacle-filled action epic that details the checkered rise and fall of the iconic French Emperor Napoleon Bonaparte, played by Oscar®-winner Joaquin Phoenix. Against a stunning backdrop of large-scale filmmaking orchestrated by legendary director Ridley Scott, the film captures Bonaparte's relentless journey to power through the prism of his addictive, volatile relationship with his one true love, Josephine, showcasing his visionary military and political tactics against some of the most dynamic practical battle sequences ever filmed.",
+      "censorship": "R",
+      "trailerLink": "https://youtu.be/LIsfMO5Jd_w?si=qJ60oPNcfut0uVKH",
+      "imageLink": "../../../assets/movie3.webp",
+      "status": "nowPlaying"
+    },
+    {
+      "id": 5,
+      "title": "Napoleon",
+      "director": "Ridley Scott",
+      "duration": "2 HR 37 MIN",
+      "genera": "ACTION",
+      "releaseDate": "NOV 22, 2023",
+      "country": "USA",
+      "description": "Napoleon is a spectacle-filled action epic that details the checkered rise and fall of the iconic French Emperor Napoleon Bonaparte, played by Oscar®-winner Joaquin Phoenix. Against a stunning backdrop of large-scale filmmaking orchestrated by legendary director Ridley Scott, the film captures Bonaparte's relentless journey to power through the prism of his addictive, volatile relationship with his one true love, Josephine, showcasing his visionary military and political tactics against some of the most dynamic practical battle sequences ever filmed.",
+      "censorship": "R",
+      "trailerLink": "https://youtu.be/LIsfMO5Jd_w?si=qJ60oPNcfut0uVKH",
+      "imageLink": "../../../assets/movie3.webp",
       "status": "nowPlaying"
     }
   ],

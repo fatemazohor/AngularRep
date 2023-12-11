@@ -10,7 +10,9 @@
 	"description": "typicode",
 	"censorship": "PG13",
 	"trailerLink": "https://youtu.be/t5khm-VjEu4?si=hMaWKodeaKCrtND8",
+	"imageLink": "https://amc-theatres-res.cloudinary.com/image/upload/c_fill,f_auto,fl_lossy,g_auto,h_600,q_auto,w_1024/v1700509340/amc-cdn/general/the-boy-and-the-heron/FLM_2580_THE_BOY_AND_THE_HERON_ARTISAN_AWARENESS_HP_DESKTOP_HERO_2000x600.jpg",	
 	"imageLink": "https://amc-theatres-res.cloudinary.com/image/upload/c_fill,f_auto,fl_lossy,g_auto,h_600,q_auto,w_1024/v1700509340/amc-cdn/general/the-boy-and-the-heron/FLM_2580_THE_BOY_AND_THE_HERON_ARTISAN_AWARENESS_HP_DESKTOP_HERO_2000x600.jpg",
+
 	"status": "nowPlaying",
     }
 {

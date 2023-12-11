@@ -7,17 +7,37 @@
 
             </div>
             <div class="carousel-caption">
-                <h3>{{movie.title}}</h3>
-                <h4>Duration</h4>
-                <h5>{{movie.duration}}</h5>
-                <h4>Release Date</h4>
-                <h5>{{ movie.releaseDate}} </h5>
-                <p>{{movie.description}}</p>
+                <div class="">
+                    
+                    <div class="">
+                        
+                        <div class="">
+                            <h3 class="fs-2">{{movie.title}}</h3>
+                            <!-- <h4>Duration</h4>
+                            <h5>{{movie.duration}}</h5> -->
+                        </div>
+                        <div class=" ">
+                            <h4>Release Date</h4>
+                            <h5>{{ movie.releaseDate}} </h5>
+                        </div>
+                    </div>
+
+
+                    <!-- <p>{{movie.description}}</p> -->
+                </div>
             </div>
         </ng-template>
     </ngb-carousel>
 </div>
 
+<div class="container mt-2 tranding">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h1 class="text-left">Now Showing</h1></li>
+       
+      </ul>
+    
+    <hr>
+</div>
 <div class="col-md-10 offset-md-1 mt-7">
 
     <div class="container">
@@ -32,7 +52,7 @@
                     <a [routerLink]="['/details',movie.id]">
                         <h3 class="movie-title">{{movie.title}}</h3>
                     </a>
-                    
+
                 </div>
                 <div class="imax-logo"></div>
                 <div class="movie-info">
@@ -49,9 +69,12 @@
                     <div style="text-align: center; font-size: larger; color: rgb(13, 77, 77);">
                         <h3>VIEW SHOW TIME </h3>
                     </div>
-                    <button class="btn btn-success">Details</button>
+                    <button class="btn btn-success" [routerLink]="['/details',movie.id]">Details</button>
                 </div>
             </div><!--movie-content-->
         </div><!--movie-card-->
     </div><!--container-->
+</div>
+<div>
+    <img src="../../../assets/movie3.webp" alt="">
 </div>
